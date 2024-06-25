@@ -1,0 +1,69 @@
+/* CalendarView.css */
+
+/* Header Styles */
+  
+  .portalname {
+    font-size: 1.5rem;
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile #Flex {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+  }
+  
+  .profilepic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+  }
+  
+  /* Calendar Container Styles */
+  .calendar-container {
+    margin: 20px;
+  }
+  
+  /* Calendar Styles */
+  .fc {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .fc-header-toolbar {
+    padding: 10px;
+  }
+  
+  .fc-header-center {
+    font-size: 1.2rem;
+  }
+  
+  .fc-event {
+    margin: 0;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .fc-event-title {
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+  
+  .fc-event-green {
+    background-color: #c8e6c9; /* Light green */
+    color: #388e3c; /* Dark green */
+  }
+  
+  .fc-event-red {
+    background-color: #ffcdd2; /* Light red */
+    color: #d32f2f; /* Dark red */
+  }
+  

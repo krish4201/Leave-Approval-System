@@ -1,0 +1,27 @@
+.leavebutton{
+    width: 150px;
+    margin-right: 10px;
+    padding: 5px;
+    font-size: 15px;
+    color:white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.15s;
+}
+#forward{
+    background-color: rgb(4, 182, 4);
+}
+#decline{
+    background-color: rgb(231, 2, 2);
+}
+.leavebutton:hover{
+    cursor: pointer;
+}
+
+#forward:active{
+    background-color: rgb(154, 253, 154);
+}
+#decline:active{
+    background-color: rgb(230, 109, 109);
+}

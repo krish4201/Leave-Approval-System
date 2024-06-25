@@ -1,0 +1,132 @@
+#userprofile{
+    width: 250px;
+}
+#profileDetial{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-content: center;
+    margin: 80px;
+    margin-left: 150px;
+    margin-bottom: 0;
+}
+
+#left-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+
+#left-side input{
+    /* width: 250px; */
+    margin: 15px;
+    height: 25px;
+    font-size: 18px;
+    padding-left: 1px;
+}
+#userDetails{
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    align-items: center;
+}
+#userDetails input{
+    padding-left: 10px;
+    width: 250px;
+    color: black;
+}
+.select{
+    margin: 15px;
+    width:265px;
+    height: 28px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+.select option{
+    font-size: 20px;
+
+}
+option{
+    margin-left:100px; 
+}
+#date{
+    text-transform: uppercase;
+}
+
+#inputs{
+    padding-left: 30px;
+}
+#create-account-btn{
+    padding: 10px;
+    font-size: 18px;
+    background-color: rgb(47, 245, 47);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgb(129, 128, 128);
+    transition: background-color 0.15s;
+}
+#create-account-btn:active,#update-btn:active{
+    background-color: rgb(192, 253, 192);
+}
+#create-account-btn:hover , #update-btn:hover{
+    cursor: pointer;
+}
+#right-side{
+    margin-left: 100px;
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 20px;
+}
+#right-side{
+    border-left: 2px solid rgb(201, 201, 201);
+}
+
+#btn-div{
+    width: auto;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+#update-btn{
+    align-items: center;
+    margin-left: -150px;
+    margin-top: 20px;
+    /* width: 100px; */
+    font-size: 20px;
+    padding: 10px 30px;
+    color: white;
+    background-color: rgb(47, 245, 47);
+    border: none;
+    font-weight: bold;
+    border-radius: 3px;
+    box-shadow: 3px 3px 5px rgb(129, 128, 128);
+    transition: background-color 0.15s;
+}
+
+#headers{
+    display: grid;
+    grid-template-columns: 300px auto;
+}
+
+#free-text{
+    display: flex;
+    flex-direction: column;
+}
+#free-text input{
+    width: 500px;
+    height: 30px;
+    margin-bottom: 10px;
+    font-size:15px;
+    padding-left: 10px;
+}
+#accountstatus{
+    color: green;
+}
+
+#updatebtn{
+    margin-left: 430px;
+}

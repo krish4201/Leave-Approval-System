@@ -1,0 +1,167 @@
+/* Header */
+
+#portalname{
+    padding-right: 250px;
+}
+#headeralign{
+    width: 380px;
+}
+
+.header{
+    height: 100px;
+    background-color: rgb(219, 2, 2);
+    /* padding: 10px; */
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between ;
+    width: 100vmax;
+    color: white;
+}
+
+.portalname{
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.profilepic{
+    width: 80px;
+    padding-right: 20px;
+}
+
+.Flex{
+    display: grid;
+    grid-template-columns:auto;
+    column-gap: 15px;
+    row-gap: 10px;
+    margin-right: 30px;
+    text-align: end;
+    padding-left: 100px;
+}
+
+/* rest */
+.leavepage{
+    display: grid;
+    grid-template-columns: 600px auto;
+    margin: 50px;
+    margin-bottom: 0;
+}
+.leftside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+    row-gap: 30px;
+    border-right: 2px solid gray;
+    padding-bottom:50px;
+}
+.inputs{
+    width: 250px;
+    height: 25px;
+    margin-left: 30px;
+    font-size: 20px;
+}
+.leftside img{
+    height: 300px;
+}
+
+.leftside div{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    row-gap: 30px;
+}
+.userdetails{
+    margin-bottom: 30px;
+}
+
+/* right side */
+
+.rightside{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    column-gap: 100px;
+    margin: 150px;
+    margin-bottom: 50px;
+}
+.leaverest,.leaveremains div{
+    display: grid;
+    grid-template-columns: 200px auto;
+    row-gap: 30px;
+}
+.leaveremains{
+    margin-bottom: 30px;
+    margin-top: -50px;
+}
+
+.leaveremains div{
+    row-gap: 0;
+    column-gap: 50px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 200px auto;
+}
+.values{
+    color: rgb(89, 87, 87);
+}
+.leaveremains div h3{
+    /* display: inline-block; */
+    padding: 10px;
+    width: 200px;
+    /* color: rgb(89, 87, 87); */
+}
+
+.leaveremains h2{
+    margin-bottom: 30px;
+    border-bottom: 3px solid black;
+    display: inline-block;
+    width:160px;
+    padding-left: 20px;
+}
+
+input,.submit,#leavetype{
+    width: 250px;
+    font-size: 22px;
+    padding: 5px;
+}
+#leavetype{
+    width:260px;
+}
+input{
+    width: 180px;
+}
+input{
+    padding-left: 20px;
+}
+.submit{
+    margin-top: 30px;
+    margin-left: 100px;
+    background-color: rgb(88, 233, 88);
+    color: white;
+    border: none;
+    padding: 10px 0;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 3px 3px 3px gray;
+    transition: background-color 0.15s;
+}
+
+.submit:hover{
+    cursor: pointer;
+}
+.submit:active{
+    background-color:  rgb(157, 234, 157);
+}

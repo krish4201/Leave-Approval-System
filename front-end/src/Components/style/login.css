@@ -1,0 +1,66 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.page{   
+    height: 100vh;
+    width: 100vmax;
+    background-image: url(/amrita.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+    font-family: sans-serif; 
+    padding-top: 10px;  
+    padding: 30px; 
+    padding-bottom: 10px;   
+}
+.input{
+    margin: 20px;
+    width: 250px;
+    height: 30px;
+    padding-left: 10px;
+    border: 2px solid rgb(161, 160, 160);
+    border-radius: 5px;
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+#submit-btn{
+    background-color: rgb(85, 203, 85);
+    height: 30px;
+    border: none;
+    width: 80px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 10px;
+    /* text-align: center; */
+    padding-left: 7px;
+}
+#status{
+    color: red;
+    margin-bottom: 10px;
+}

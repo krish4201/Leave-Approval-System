@@ -1,0 +1,32 @@
+
+.contain{
+  margin: 100px;
+  margin-bottom: 0;
+}
+
+.tables{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.tables{
+  margin-top: 20px;
+  font-size: 0px;
+}
+.removebutton{
+  width: 150px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  border:none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+.removebutton:hover{
+  cursor: pointer;
+}
+.removebutton:active{
+  background-color: rgb(228, 88, 88);
+  
+}
