@@ -76,8 +76,8 @@
     "vary": "^1.1.2"
   },
   "scripts": {
-    "start": "node serverv2.js",
-    "dev": "nodemon serverv2.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "keywords": [],
   "author": "",

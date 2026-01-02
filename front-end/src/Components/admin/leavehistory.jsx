@@ -14,6 +14,7 @@ function leavehistory() {
         const fetchData = async () => {
             try {
                 const response = await axios.post("http://localhost:8000/leavehistory");
+                // console.log(response)
                 setRows(response.data); // assuming response.data is an array of objects
                 setData(response.data);
             } catch (error) {
@@ -50,14 +51,14 @@ function leavehistory() {
                 fontSize: "18px",
             }
         },
-        {
-            name: "Name",
-            selector: (row) => row.name,
-            sortable: true,
-            style: {
-                fontSize: "18px",
-            }
-        },
+        // {
+        //     name: "Name",
+        //     selector: (row) => row.name,
+        //     sortable: true,
+        //     style: {
+        //         fontSize: "18px",
+        //     }
+        // },
         {
             name: "Email ID",
             selector: (row) => row.email,
@@ -68,7 +69,7 @@ function leavehistory() {
         },
         {
             name: "Department",
-            selector: (row) => row.role,
+            selector: (row) => row.dept,
             sortable: true,
             style: {
                 fontSize: "18px",
@@ -106,14 +107,14 @@ function leavehistory() {
                 fontSize: "18px",
             }
         },
-        {
-            name: "status",
-            selector: (row) => row.status,
-            sortable: true,
-            style: {
-                fontSize: "18px",
-            }
-        },
+        // {
+        //     name: "status",
+        //     selector: (row) => row.status,
+        //     sortable: true,
+        //     style: {
+        //         fontSize: "18px",
+        //     }
+        // },
         
     ];
     

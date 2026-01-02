@@ -52,7 +52,7 @@ function UserDashboard() {
                         <img src={schedule} alt="" />
                         <span>Calender</span>
                     </button>
-                    <button className="PortalButton">
+                    {/* <button className="PortalButton">
                         <img src={email} alt="" />
                         <span>Outlook</span>
                     </button>
@@ -63,7 +63,7 @@ function UserDashboard() {
                     <button className="PortalButton">
                         <img src={word} alt="" />
                         <span>Word</span>
-                    </button>
+                    </button> */}
                     <button className="PortalButton" onClick={(e)=>history("./updateprofile",{state:{id:user}})}>
                         <img src={profile} alt="" />
                         <span>Update Profile</span>

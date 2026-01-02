@@ -65,10 +65,10 @@ function admin() {
                     <img src={leaveRequests} alt="Add Profile" />
                     <span>Leave Requests</span>
                 </button>
-                <button id="PortalButton" onClick={leavehistory}>
+                {/* <button id="PortalButton" onClick={leavehistory}>
                     <img src={leaveHistory} alt="Add Profile" />
                     <span>Leave Requests History </span>
-                </button>
+                </button> */}
             </div>
         </div>
     </section>

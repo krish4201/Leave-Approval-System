@@ -14,6 +14,8 @@ function leaveRequest() {
     const location=useLocation();
     const user=location.state.id;
     const [rows, setRows] = useState([]);
+
+
     useEffect(() => {
         const intervalId = setInterval(() => {
             setTime(new Date());
@@ -27,7 +29,17 @@ function leaveRequest() {
                 } else {
                     responseData = await axios.post("http://localhost:8000/getleavefordean");
                 }
-                console.log("Hello",    responseData.data)
+                // console.log("Hello",    responseData.data)
+                if(responseData.data.length ==0){
+                        const t = document.getElementById("Hello")
+                        t.textContent="No Records";
+                        t.style.display ="flex";
+                        // t.style.alignItems="center";
+                        t.style.justifyContent="center"
+                        t.style.fontSize="3em"
+
+
+                }
                 setRows(responseData.data);
                 setData(responseData.data);
             } catch (error) {
@@ -36,9 +48,17 @@ function leaveRequest() {
         };
     
         fetchData();
-    
+        
         return () => clearInterval(intervalId);
+        
     }, [user.role]); 
+   
+
+
+    // if (rows){
+    // const t = document.getElementById("Hello");
+    // console.log(t);
+    // }
     async function handleDecline(email,applieddate,leavetype,startdate,enddate,dept){
         try {
             await axios.post("http://localhost:8000/decline", {
@@ -163,6 +183,26 @@ function leaveRequest() {
             width: "350px"
         },
     ];
+
+//     useEffect(() => {
+//   const t = document.getElementById("Hello");
+  
+//   if (!t) return; // Guard clause for missing element
+  
+//   if (rows[0] === undefined) {
+//     t.textContent = "No Records";
+//     t.style.display = "flex";
+//     t.style.justifyContent = "center";
+//     t.style.fontSize = "3em";
+//   } else {
+//     // Reset only the styles you set
+//     t.style.display = "";
+//     t.style.justifyContent = "";
+//     t.style.fontSize = "";
+//     t.textContent = ""; // Optional: clear text too
+//   }
+// }, [rows]);
+
     const handleSearch = (e) => {
         const searchTerm = e.target.value.toLowerCase();
         const filteredData = rows.filter((row) =>
@@ -190,6 +230,7 @@ function leaveRequest() {
             },
         },
     };
+    
 
     return (
         <>
@@ -204,7 +245,7 @@ function leaveRequest() {
                     <img src={profile} alt="profile" className="profilepic" />
                 </div>
             </header>
-            <div className={style.contain}>
+            <div className={style.contain} id ="Hello" >
                 <div className="input-group">
                     <input
                         type="search"
